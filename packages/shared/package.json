@@ -1,0 +1,19 @@
+{
+  "name": "@pettlo/shared",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./schemas/index.ts",
+  "exports": {
+    "./schemas": "./schemas/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "zod": "^3"
+  },
+  "dependencies": {
+    "zod": "^3"
+  }
+}

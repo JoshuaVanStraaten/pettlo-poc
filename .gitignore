@@ -1,0 +1,7 @@
+﻿node_modules/
+.next/
+.wrangler/
+.env*.local
+.dev.vars
+dist/
+.worktrees/
