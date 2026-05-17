@@ -4,7 +4,6 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { toast } from "sonner"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { AvatarBadge } from "@/components/ui/avatar-badge"
 import {
@@ -136,9 +135,12 @@ export function AppointmentsTable({ appointments: initial }: { appointments: App
                 <td style={{ padding: "13px 20px" }}>
                   <DropdownMenu>
                     <DropdownMenuTrigger>
-                      <Button variant="ghost" size="icon">
+                      <span style={{
+                        display: "inline-flex", alignItems: "center", justifyContent: "center",
+                        width: 32, height: 32, borderRadius: 6, cursor: "pointer",
+                      }}>
                         <i className="bi bi-three-dots-vertical" style={{ fontSize: 14, color: "#94a3b8" }} />
-                      </Button>
+                      </span>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                       <DropdownMenuItem onClick={() => router.push(`/pets/${a.pet_id}`)}>
