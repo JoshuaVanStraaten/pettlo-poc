@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:cf": "npx @opennextjs/cloudflare build && cp -r .next/static/css .open-next/assets/_next/static/css && mv .open-next/worker.js .open-next/_worker.js",
     "start": "next start"
   },
   "dependencies": {
