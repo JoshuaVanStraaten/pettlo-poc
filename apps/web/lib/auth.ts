@@ -4,7 +4,7 @@ import type { Database } from "@/lib/supabase/types"
 
 type UserRecord = Database["public"]["Tables"]["users"]["Row"]
 
-const POC_ADMIN_ID = '00000000-0000-0000-0001-000000000001'
+const POC_ADMIN_ID = '00000000-0000-0000-0001-000000000002'
 
 export async function getAuthUser(
   _request: Request
