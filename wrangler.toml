@@ -1,0 +1,7 @@
+name = "pettlo-poc"
+compatibility_date = "2025-05-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "apps/web/.open-next"
+
+[triggers]
+crons = ["0 * * * *"]
