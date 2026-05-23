@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "pettlo",
+  "packageManager": "pnpm@10.11.1",
   "scripts": {
     "dev": "pnpm --filter web dev",
     "build": "pnpm --filter web build",
@@ -8,7 +9,7 @@
   },
   "engines": {
     "node": ">=20",
-    "pnpm": ">=9"
+    "pnpm": ">=10"
   },
   "pnpm": {
     "overrides": {
