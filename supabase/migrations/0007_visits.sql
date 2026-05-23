@@ -1,5 +1,5 @@
 create table visits (
-  id              uuid primary key default uuid_generate_v4(),
+  id              uuid primary key default gen_random_uuid(),
   clinic_id       uuid not null references clinics(id) on delete cascade,
   pet_id          uuid not null references pets(id) on delete cascade,
   vet_id          uuid not null references users(id),

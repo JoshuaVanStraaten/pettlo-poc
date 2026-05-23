@@ -1,5 +1,5 @@
 create table pets (
-  id           uuid primary key default uuid_generate_v4(),
+  id           uuid primary key default gen_random_uuid(),
   owner_id     uuid not null references users(id) on delete cascade,
   name         text not null,
   species      text not null,

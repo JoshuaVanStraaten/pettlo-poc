@@ -1,5 +1,5 @@
 create table notifications (
-  id               uuid primary key default uuid_generate_v4(),
+  id               uuid primary key default gen_random_uuid(),
   clinic_id        uuid not null references clinics(id) on delete cascade,
   appointment_id   uuid references appointments(id) on delete set null,
   recipient_email  text not null,

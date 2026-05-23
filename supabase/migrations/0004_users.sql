@@ -1,5 +1,5 @@
 create table users (
-  id          uuid primary key default uuid_generate_v4(),
+  id          uuid primary key default gen_random_uuid(),
   clinic_id   uuid references clinics(id) on delete cascade,
   auth_id     uuid unique,
   email       text not null unique,
