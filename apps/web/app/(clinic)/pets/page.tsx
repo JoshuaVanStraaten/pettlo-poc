@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { createServiceClient } from "@/lib/supabase/service"
 import { PetsGrid } from "@/components/pets-grid"
 
