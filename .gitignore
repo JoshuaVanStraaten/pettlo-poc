@@ -5,3 +5,4 @@
 .dev.vars
 dist/
 .worktrees/
+.open-next/
