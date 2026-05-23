@@ -1,4 +1,3 @@
-export const runtime = "edge"
 
 import { createServiceClient } from "@/lib/supabase/service"
 

@@ -1,4 +1,3 @@
-export const runtime = "edge"
 
 import { Resend } from "resend"
 import { createServiceClient } from "@/lib/supabase/service"
