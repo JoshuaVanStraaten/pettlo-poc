@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   turbopack: {
     root: monorepoRoot,
   },
+  experimental: {
+    inlineCss: true,
+  },
 };
 
 export default nextConfig;
