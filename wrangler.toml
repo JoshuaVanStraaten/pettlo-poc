@@ -2,7 +2,3 @@ name = "pettlo-poc"
 compatibility_date = "2025-05-01"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "apps/web/.open-next"
-
-[build]
-command = "npm install -g pnpm@11.1.2 && pnpm install && cd apps/web && npx @opennextjs/cloudflare build && mv .open-next/worker.js .open-next/_worker.js"
-
