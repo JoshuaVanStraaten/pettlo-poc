@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:cf": "npx @opennextjs/cloudflare build && cp -r .next/static/css .open-next/assets/_next/static/css && mv .open-next/worker.js .open-next/_worker.js",
+    "build:cf": "npx @opennextjs/cloudflare build && node -e \"require('fs').mkdirSync('.open-next/assets/_next/static/css',{recursive:true});require('fs').readdirSync('.next/static/css').forEach(f=>require('fs').copyFileSync('.next/static/css/'+f,'.open-next/assets/_next/static/css/'+f))\" && mv .open-next/worker.js .open-next/_worker.js",
     "start": "next start"
   },
   "dependencies": {
