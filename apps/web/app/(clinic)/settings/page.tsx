@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export default function SettingsPage() {
   return (
-    <div style={{ padding: "28px 32px", maxWidth: 680 }}>
+    <div style={{ maxWidth: 680 }}>
       <h1 style={{ fontSize: 22, fontWeight: 700, color: "#0f172a", margin: 0 }}>Settings</h1>
       <p style={{ fontSize: 14, color: "#64748b", margin: "4px 0 24px" }}>Manage clinic preferences and configuration</p>
       <Card>

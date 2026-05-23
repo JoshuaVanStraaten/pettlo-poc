@@ -11,7 +11,7 @@ const NAV_ITEMS = [
   { href: "/settings",         label: "Settings",     icon: "bi-gear"         },
 ]
 
-export function Sidebar() {
+export function Sidebar({ onClose }: { onClose?: () => void }) {
   const pathname = usePathname()
 
   return (

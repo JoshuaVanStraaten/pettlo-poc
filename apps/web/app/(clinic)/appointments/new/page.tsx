@@ -17,7 +17,7 @@ export default async function NewAppointmentPage() {
   ])
 
   return (
-    <div style={{ padding: "28px 32px", maxWidth: 720 }}>
+    <div style={{ maxWidth: 720 }}>
       <div style={{ marginBottom: 28 }}>
         <h1 style={{ fontSize: 22, fontWeight: 700, color: "#0f172a", margin: 0 }}>Book Appointment</h1>
         <p style={{ fontSize: 14, color: "#64748b", margin: "4px 0 0" }}>Schedule a new clinic visit</p>

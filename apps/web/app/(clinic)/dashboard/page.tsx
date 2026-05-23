@@ -25,7 +25,7 @@ export default async function DashboardPage() {
   ]
 
   return (
-    <div style={{ padding: "28px 32px", maxWidth: 1140 }}>
+    <div>
       <div style={{ marginBottom: 28 }}>
         <h1 style={{ fontSize: 22, fontWeight: 700, color: "#0f172a", margin: 0 }}>Dashboard</h1>
         <p style={{ fontSize: 14, color: "#64748b", margin: "4px 0 0" }}>
@@ -34,12 +34,12 @@ export default async function DashboardPage() {
       </div>
 
       {/* Stats */}
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: 16, marginBottom: 28 }}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-7">
         {STATS.map(s => (
           <Card key={s.label}>
             <CardContent style={{ padding: 20 }}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
-                <div>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
+                <div style={{ minWidth: 0 }}>
                   <p style={{ fontSize: 13, color: "#64748b", margin: 0, lineHeight: 1.4 }}>{s.label}</p>
                   <p style={{ fontSize: 30, fontWeight: 700, color: "#0f172a", margin: "6px 0 0", lineHeight: 1 }}>{s.value}</p>
                   <p style={{ fontSize: 12, color: s.color, margin: "6px 0 0", fontWeight: 500 }}>{s.sub}</p>

@@ -10,7 +10,7 @@ export default async function PetsPage() {
     .order("name")
 
   return (
-    <div style={{ padding: "28px 32px", maxWidth: 1140 }}>
+    <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 24 }}>
         <div>
           <h1 style={{ fontSize: 22, fontWeight: 700, color: "#0f172a", margin: 0 }}>Pets</h1>

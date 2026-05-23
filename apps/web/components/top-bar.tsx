@@ -1,6 +1,6 @@
 import { AvatarBadge } from "@/components/ui/avatar-badge"
 
-export function TopBar() {
+export function TopBar({ onMenuClick }: { onMenuClick?: () => void }) {
   return (
     <div style={{
       height: 56, background: "white", borderBottom: "1px solid #f1f5f9",
@@ -8,6 +8,20 @@ export function TopBar() {
       padding: "0 28px", flexShrink: 0,
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        {/* Hamburger — only visible on mobile */}
+        {onMenuClick && (
+          <button
+            onClick={onMenuClick}
+            className="md:hidden"
+            style={{
+              background: "none", border: "none", cursor: "pointer",
+              padding: 4, color: "#64748b", display: "flex",
+            }}
+            aria-label="Open menu"
+          >
+            <i className="bi bi-list" style={{ fontSize: 22 }} />
+          </button>
+        )}
         <div style={{
           width: 36, height: 36, borderRadius: 8,
           border: "1.5px dashed #cbd5e1", display: "flex", alignItems: "center",

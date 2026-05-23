@@ -68,7 +68,7 @@ export function AppointmentsTable({ appointments: initial }: { appointments: App
   return (
     <div>
       {/* Date filter */}
-      <div style={{ padding: "0 24px 16px", display: "flex", alignItems: "center", gap: 12 }}>
+      <div style={{ paddingBottom: 16, display: "flex", alignItems: "center", gap: 12 }}>
         <label style={{ fontSize: 13, color: "#64748b", fontWeight: 500 }}>Filter by date</label>
         <Input
           type="date"
@@ -86,7 +86,8 @@ export function AppointmentsTable({ appointments: initial }: { appointments: App
         )}
       </div>
 
-      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+      <div style={{ overflowX: "auto" }}>
+      <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14, minWidth: 640 }}>
         <thead>
           <tr style={{ borderBottom: "1px solid #f1f5f9" }}>
             {["Time", "Date", "Pet Name", "Owner", "Veterinarian", "Status", "Actions"].map(h => (
@@ -167,6 +168,7 @@ export function AppointmentsTable({ appointments: initial }: { appointments: App
           })}
         </tbody>
       </table>
+      </div>
     </div>
   )
 }

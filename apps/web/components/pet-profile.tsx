@@ -58,7 +58,7 @@ export function PetProfile({
   const speciesBadgeVariant = pet.species === "Dog" ? "primary" : pet.species === "Cat" ? "outline" : "success"
 
   return (
-    <div style={{ padding: "28px 32px", maxWidth: 960 }}>
+    <div style={{ maxWidth: 960 }}>
       {/* Back */}
       <button
         onClick={() => router.back()}
